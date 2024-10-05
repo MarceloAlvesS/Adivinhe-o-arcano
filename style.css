@@ -10,10 +10,17 @@ h1#principal {
 
 div{
   display: flex;
+  flex-direction: column;
   #botao {
     background-color: #C2AE37;
     margin: auto;
     height: 50px;
-    width: 100px;
-}
+    width: 100px;}
+  
+  #pergunta {
+    text-align: center;
+  }
+  #revelador {
+    display: none;
+  }
 }
