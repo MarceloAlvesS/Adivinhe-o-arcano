@@ -23,4 +23,8 @@ div{
   #revelador {
     display: none;
   }
+  #resposta {
+    scale: 0.7;
+    margin: auto;
+  }
 }

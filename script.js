@@ -37,6 +37,7 @@ const arcanos = {
 }
 
 revelador.addEventListener('click', function() {
-  resposta.innerText = arcanos[arcano]
+  resposta.src = `./cartas/${arcano}.png`
+  resposta.alt = arcanos[arcano]
   resposta.style.display = 'block'
 })
