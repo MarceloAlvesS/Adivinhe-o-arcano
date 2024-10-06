@@ -6,7 +6,10 @@ const texto_resposta = document.querySelector('#texto_resposta')
 
 var arcano = 0
 botao.addEventListener('click', function (){
-  arcano = Math.floor(Math.random() * 22)
+  while (arcano == pergunta.innerText) {
+    arcano = Math.floor(Math.random() * 22)
+    console.log('passou')
+  }
   pergunta.innerText = arcano
   revelador.style.display = 'block'
   resposta.style.display = 'none'
