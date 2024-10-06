@@ -23,8 +23,12 @@ div{
   #revelador {
     display: none;
   }
+
+  #texto_resposta {
+    text-align: center;
+  }
+
   #resposta {
-    scale: 0.7;
     margin: auto;
   }
 }

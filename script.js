@@ -2,6 +2,7 @@ const pergunta = document.querySelector('#pergunta')
 const resposta = document.querySelector('#resposta')
 const botao = document.querySelector('#botao')
 const revelador = document.querySelector('#revelador')
+const texto_resposta = document.querySelector('#texto_resposta')
 
 var arcano = 0
 botao.addEventListener('click', function (){
@@ -9,6 +10,7 @@ botao.addEventListener('click', function (){
   pergunta.innerText = arcano
   revelador.style.display = 'block'
   resposta.style.display = 'none'
+  texto_resposta.style.display = 'none'
 })
 
 const arcanos = {
@@ -39,5 +41,7 @@ const arcanos = {
 revelador.addEventListener('click', function() {
   resposta.src = `./cartas/${arcano}.png`
   resposta.alt = arcanos[arcano]
+  texto_resposta.innerText = arcanos[arcano]
+  texto_resposta.style.display = 'block'
   resposta.style.display = 'block'
 })
